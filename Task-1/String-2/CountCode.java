@@ -3,7 +3,7 @@ package string2;
 public class CountCode {
 	public static void main(String[] args) {
 		CountCode s = new CountCode();
-		System.out.println("code");
+		System.out.println(s.countCode("code"));
 	}
 
 	public int countCode(String str) {
