@@ -1,0 +1,18 @@
+package array2;
+
+public class TripleUp {
+	public static void main(String[] args) {
+		TripleUp s = new TripleUp();
+		int nums[]= {1, 2, 2, 6, 99, 99, 7};
+		System.out.println(s.tripleUp(nums));
+	}
+
+	public boolean tripleUp(int[] nums) {
+		for (int i = 0; i < nums.length - 2; i++) {
+			if (nums[i] + 1 == nums[i + 1] && nums[i + 1] + 1 == nums[i + 2])
+				return true;
+		}
+		return false;
+	}
+
+}
