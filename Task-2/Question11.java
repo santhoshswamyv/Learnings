@@ -1,13 +1,10 @@
 package task2;
 
-import java.util.Scanner;
-
 public class Question11 {
-	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		StringBuilder result = new StringBuilder();
-		String str = sc.next();
+		String result = "";
+		String str = "a1b10";
 		int i = 0;
 		while (i < str.length()) {
 			char letter = str.charAt(i);
@@ -19,9 +16,9 @@ public class Question11 {
 			}
 
 			for (int j = 0; j < count; j++) {
-				result.append(letter);
+				result+=letter;
 			}
 		}
-		System.out.println(result.toString());
+		System.out.println(result);
 	}
 }
