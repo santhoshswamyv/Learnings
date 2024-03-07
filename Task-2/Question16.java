@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Question16 {
 	public static void main(String[] args) {
 		int arr1[] = { 2, 4, 5, 6, 7, 9, 10, 13 };
-		int arr2[] = { 2, 3, 4, 4, 5, 6, 7, 8, 9, 11, 15 };
+		int arr2[] = { 2, 3, 4, 5, 6, 7, 8, 9, 11, 15 };
 		int mergedarr[] = new int[arr1.length + arr2.length];
 
 		int i = 0;

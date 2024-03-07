@@ -6,22 +6,40 @@ public class Question2 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int students = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 
-		int startRollNo = 100;
-
-		int endRollNo = 100 + students;
-
-		System.out.print("Enter the number of groups : ");
-		int totalGroups = sc.nextInt();
-
-		for (int i = 0; i < totalGroups; i++) {
-			System.out.println("Group " + (i + 1) + ":");
-			for (int rollNo = startRollNo + i; rollNo <= endRollNo; rollNo += totalGroups) {
-				System.out.println(rollNo);
-			}
-			System.out.println();
-		}
+		System.out.println(bitwiseXor(a, b));
+		System.out.println(bitwiseAnd(a, b));
+		System.out.println(bitwiseOr(a, b));
+		System.out.println(bitwiseComplement(a));
+		System.out.println(bitwiseRightShift(a));
+		System.out.println(bitwiseLeftShift(a));
 
 	}
+
+	public static int bitwiseXor(int a, int b) {
+		return (a ^ b);
+	}
+
+	public static int bitwiseAnd(int a, int b) {
+		return (a & b);
+	}
+
+	public static int bitwiseOr(int a, int b) {
+		return (a | b);
+	}
+
+	public static int bitwiseComplement(int a) {
+		return ~a;
+	}
+
+	public static int bitwiseRightShift(int a) {
+		return a >> 2;
+	}
+
+	public static int bitwiseLeftShift(int a) {
+		return a << 2;
+	}
+
 }
