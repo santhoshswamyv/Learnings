@@ -9,7 +9,7 @@ public class WordsWithoutList {
 		System.out.println(s.wordsWithoutList(args, 0));
 	}
 
-	public List wordsWithoutList(String[] words, int len) {
+	public List<String> wordsWithoutList(String[] words, int len) {
 		ArrayList<String> arr = new ArrayList<String>();
 		for (String s : words) {
 			if (s.length() != len)
