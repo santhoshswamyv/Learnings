@@ -1,4 +1,4 @@
-package day1;
+package march05;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package day1;
+package march05;
 
 public class Question1mp {
 	public static void main(String[] args) {

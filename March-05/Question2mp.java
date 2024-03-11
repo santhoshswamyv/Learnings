@@ -1,4 +1,4 @@
-package day1;
+package march05;
 
 public class Question2mp {
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Question2mp {
 	}
 
 	public static int countHi(String str) {
-		if (str.length() == 1) {
+		if (str.length() <= 1) {
 			return 0;
 		}
 
