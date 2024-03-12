@@ -6,8 +6,12 @@ public class Question4 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		String s = "ZOHOISHIRING";
-		int r = 4;
+		System.out.print("Enter the Word : ");
+		String s = sc.next();
+
+		System.out.print("Enter the Rows : ");
+		int r = sc.nextInt();
+
 		int c = s.length();
 
 		char arr[][] = new char[r][c];
