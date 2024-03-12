@@ -1,5 +1,6 @@
 package march05;
 
+//Bing Answer Need Review
 public class Question1 {
 	static class Point {
 		int x, y;
