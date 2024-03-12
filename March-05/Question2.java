@@ -12,11 +12,10 @@ public class Question2 {
 
 		char arr[][] = new char[r][c];
 		int i = 0;
-		int row = -2;
-		int column = 1;
+		int row = 0;
+		int column = 0;
 		while (i < c) {
-			row += 2;
-			column -= 1;
+
 			while (row < r && i < c) {
 				arr[row][column] = s.charAt(i++);
 				row++;
@@ -29,6 +28,9 @@ public class Question2 {
 				row--;
 				column++;
 			}
+
+			row += 2;
+			column -= 1;
 		}
 		for (int j = 0; j < arr.length; j++) {
 			for (int j2 = 0; j2 < arr[j].length; j2++) {
