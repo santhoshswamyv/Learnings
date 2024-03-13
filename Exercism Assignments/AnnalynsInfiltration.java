@@ -1,4 +1,4 @@
-package exercism.annalynsinfiltration;
+package exercism;
 
 public class AnnalynsInfiltration {
 
