@@ -2,11 +2,6 @@ package exercism;
 
 public class AnnalynsInfiltration {
 
-	public static void main(String[] args) {
-		System.out.println(canFreePrisoner(true, false, false, true));
-
-	}
-
 	public static boolean canFastAttack(boolean knightIsAwake) {
 		return !knightIsAwake;
 	}
@@ -24,4 +19,5 @@ public class AnnalynsInfiltration {
 		return petDogIsPresent ? (!archerIsAwake ? true : false)
 				: (!archerIsAwake && !knightIsAwake && prisonerIsAwake) ? true : false;
 	}
+
 }
