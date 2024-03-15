@@ -3,17 +3,11 @@ package exercism;
 public class LogLevels {
 
 	public static String message(String logLine) {
-		logLine = logLine.substring(logLine.indexOf(":") + 1);
-		return logLine.trim();
+		return logLine.substring(logLine.indexOf(":") + 1).trim();
 	}
 
 	public static String logLevel(String logLine) {
-		if (logLine.toLowerCase().contains("info"))
-			return "info";
-		if (logLine.toLowerCase().contains("warning"))
-			return "warning";
-
-		return "error";
+		return logLine.substring(logLine.indexOf("[") + 1, logLine.indexOf("]")).toLowerCase();
 	}
 
 	public static String reformat(String logLine) {
