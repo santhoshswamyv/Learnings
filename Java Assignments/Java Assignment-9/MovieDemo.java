@@ -2,9 +2,9 @@ package javaassignment9;
 
 public class MovieDemo {
 	public static void main(String[] args) {
-		Movie movie1 = new RomComMovie("When Harry Met Sally", 1989);
-		Movie movie2 = new ThrillerMovie("The Silence of the Lambs", 1991);
-		Movie movie3 = new ActionMovie("Die Hard", 1988);
+		Movie movie1 = new RomComMovie("Love Today", 2023);
+		Movie movie2 = new ThrillerMovie("Chandramukhi", 1991);
+		Movie movie3 = new ActionMovie("Leo", 2023);
 
 		printMovieDetails(movie1);
 		printMovieDetails(movie2);

@@ -2,6 +2,11 @@ package javaassignment8.question5;
 
 public class Book {
 	String title, author, isbn, publication;
+	LibraryManagementSystem libraryManagementSystem;
+
+	Book() {
+		this.libraryManagementSystem = new LibraryManagementSystem(this);
+	}
 
 	void showDueDt() {
 		// Implement functionality

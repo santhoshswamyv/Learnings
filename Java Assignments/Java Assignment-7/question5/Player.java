@@ -2,9 +2,9 @@ package javaassignment7.question5;
 
 public class Player {
 	// Instance variables
-	private String name;
-	private String position;
-	private int jerseyNumber;
+	public String name;
+	public String position;
+	public int jerseyNumber;
 
 	// Constructor
 	public Player(String name, String position, int jerseyNumber) {

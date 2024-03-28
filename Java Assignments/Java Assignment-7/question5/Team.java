@@ -2,9 +2,9 @@ package javaassignment7.question5;
 
 public class Team {
 	// Instance variables
-	private String name;
-	private String city;
-	private String division;
+	public String name;
+	public String city;
+	public String division;
 
 	// Constructor
 	public Team(String name, String city, String division) {
@@ -15,10 +15,10 @@ public class Team {
 
 	// Methods
 	public void playGame() {
-		
+
 	}
 
 	public void hireCoach() {
-		
+
 	}
 }

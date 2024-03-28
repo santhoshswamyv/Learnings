@@ -2,21 +2,19 @@ package javaassignment9;
 
 public class EmployeeDriver {
 	public static void main(String[] args) {
-		Employee s = new HourlyEmployee("Nagaraj", 1);
-		s.getEmployeeDetails(23);
+		Employee s = new HourlyEmployee("Nagaraj", 1, 23);
+		s.getEmployeeDetails();
 
 		System.out.println();
 
-		s = new SalariedEmployee("Selva", 2);
-		s.getEmployeeDetails(1800.00);
+		s = new SalariedEmployee("Selva", 2, 18000);
+		s.getEmployeeDetails();
 	}
 }
 
 class Employee {
 	String name;
 	int employeeId;
-	double salary;
-	short hoursWorked;
 
 	public Employee(String name, int employeeId) {
 		this.name = name;
@@ -24,26 +22,35 @@ class Employee {
 	}
 
 	public void getEmployeeDetails() {
-		System.out.println("Name: " + name + ", Employee ID: " + employeeId);
+		System.out.println("Name: " + name + "\nEmployee ID: " + employeeId);
 	}
 
-	public void getEmployeeDetails(double salary) {
-		System.out.println("Name: " + name + "\nEmployee ID: " + employeeId + "\nSalary : " + salary);
-	}
-
-	public void getEmployeeDetails(int hoursWorked) {
-		System.out.println("Name: " + name + "\nEmployee ID: " + employeeId + " \nHours Worked : " + hoursWorked);
-	}
 }
 
 class HourlyEmployee extends Employee {
-	public HourlyEmployee(String name, int employeeId) {
+	int hoursWorked;
+
+	public HourlyEmployee(String name, int employeeId, int hoursWorked) {
 		super(name, employeeId);
+		this.hoursWorked = hoursWorked;
+	}
+
+	public void getEmployeeDetails() {
+		super.getEmployeeDetails();
+		System.out.println("Hours Worked : " + hoursWorked);
 	}
 }
 
 class SalariedEmployee extends Employee {
-	public SalariedEmployee(String name, int employeeId) {
+	double salary;
+
+	public SalariedEmployee(String name, int employeeId, double salary) {
 		super(name, employeeId);
+		this.salary = salary;
+	}
+
+	public void getEmployeeDetails() {
+		super.getEmployeeDetails();
+		System.out.println("Salary : " + salary);
 	}
 }
